@@ -29,7 +29,7 @@
 								<tr>
 		        					<td>
 		        					@foreach ($categories as $category)
-		        						@if ($category->id === $ticket->category_id)
+		        						@if ($category->id == $ticket->category_id)
 											{{ $category->name }}
 		        						@endif
 		        					@endforeach
